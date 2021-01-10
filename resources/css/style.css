@@ -12,6 +12,9 @@ header {
     top: 0;
     margin-top: 10px;
 }
+p {
+    font-size: 14px;
+}
 .company{
     margin-top: 0;
     padding-left: 30px;
@@ -31,10 +34,16 @@ header {
 .ourteam {
     width:20%;
 }
-.ourteam img {
-    max-width: 90%;
+.ourteam p {
+    min-width: 100%;
 }
-
+.ourteam img {
+    max-width: 95%;
+}
+body {
+    height: 80%;
+    overflow: scroll;
+}
 nav {
     width: 90%;
     display: inline-flex;
@@ -55,14 +64,26 @@ nav a{
     align-items: center;
     justify-content: center;
 }
-a {
+header a {
     text-decoration: none;
+    
+}
+a {
     color: black;
 }
 
-.background img {
-    width: 200px;
-    height: 200px;
+.circleimage  {
+    width: 50%;
+    height: 50%;    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.circleimage img {
+    padding: 20px;
+    max-width: 75%;
+    max-height: 75%;
     border-radius: 50%;
 }
 footer {
@@ -71,7 +92,7 @@ footer {
 .companyfooter {
     font-weight: bold;
 }
-@media only screen and (min-width: 1025px) {
+@media only screen and (min-width: 768px) {
     footer {
         display: none;
     }
@@ -94,6 +115,7 @@ footer {
     nav {
         width: 100%;
         flex-grow: 5;
+        flex-shrink: 1;
         display: flex;
         justify-content: center;
         justify-items: center;
@@ -121,12 +143,21 @@ footer {
     footer {
         width: 100%;
         display: flex;
-        flex-flow: row wrap;
-        align-content: space-around;
-        justify-content: center;
+        flex-flow: column wrap;
+        align-items: center;
+        justify-content: space-around;
     }
     .footermenu {
-       width: 50%
+        display: inline-flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        width: 150px;
+      
+    }
+    .footermenu a{
+      
+       width: 200px;
     }
     
 }
