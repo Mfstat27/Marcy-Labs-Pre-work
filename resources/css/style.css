@@ -87,6 +87,7 @@ a {
 }
 footer {
     background-color: lightgrey;
+    font-size: 10px;
 }
 .companyfooter {
     font-weight: bold;
